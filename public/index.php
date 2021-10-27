@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
   <p>Belajar Konsep MVC dengan pemrogramman php dan menarapkan pada GitHub</p>
 </body>
 
-</html>
+</html> -->
 
 
 
