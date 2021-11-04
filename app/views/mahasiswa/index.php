@@ -2,9 +2,10 @@
 
   <div class="row">
     <div class="col-6">
+      <?php Flasher::flash(); ?>
 
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#formModal">
+      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formModal">
         Tambah Data Mahasiswa
       </button>
       <h3 class="mt-3">Daftar Mahasiswa</h3>
@@ -13,7 +14,7 @@
         <?php foreach ($data['mhs'] as $mhs) : ?>
           <li class="list-group-item d-flex justify-content-between align-items-center">
             <?= $mhs['nama']; ?>
-            <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="badge bg-dark text-decoration-none">Detail</a>
+            <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>" class="badge bg-secondary text-decoration-none">Detail</a>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -62,7 +63,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Tambah Data</button>
+        <button type="submit" class="btn btn-dark">Tambah Data</button>
 
         </form>
 
